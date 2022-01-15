@@ -1,0 +1,35 @@
+// チェックボックス
+.checkbox-btn {
+  position: relative; /* ボックスの位置を指定する */
+  padding: 0 0 0 20px; /* ボックス内側の余白を指定する */
+}
+  .checkbox-btn:hover:after {
+  border-color: #0171bd; /* ボックスの境界線を実線で指定する */
+}
+  .checkbox-btn:after, .checkbox-btn:before{
+  position: absolute; /* ボックスの位置を指定する */
+  content: ""; /* ボックスのコンテンツ */
+  display: block; /* ブロックレベル要素化する */
+  top: 50%; /* 上部から配置の基準位置を決める */
+}
+.checkbox-btn:after {
+  left: 0; /* 左から配置の基準位置を決める */
+  margin-top: -8px; /* チェック枠の位置 */
+  width: 15px; /* ボックスの横幅を指定する */
+  height: 15px; /* ボックスの高さを指定する */
+  border: 2px solid #ccc; /* ボックスの境界線を実線で指定する */
+  border-radius: 6px; /* ボックスの角丸を指定する */
+}
+.checkbox-btn:before {
+  left: 6px; /* 左から配置の基準位置を決める */
+  margin-top: -7px; /* チェックマークの位置 */
+  width: 5px; /* ボックスの横幅を指定する */
+  height: 9px; /* ボックスの高さを指定する */
+  border-right: 3px solid #0171bd; /* 境界線（右）のスタイルを指定する */
+  border-bottom: 3px solid #0171bd; /* 境界線（下）のスタイルを指定する */
+  transform: rotate(45deg); /* 要素を回転させる */
+  opacity: 0; /* 要素を透過指定する */
+  }
+input[type=checkbox]:checked + .checkbox-btn:before {
+  opacity: 1; /* 要素を表示する */
+}

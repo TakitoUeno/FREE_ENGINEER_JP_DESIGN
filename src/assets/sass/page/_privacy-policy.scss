@@ -1,0 +1,46 @@
+.privacy-p__title {
+  margin-top: rem(50);
+  &::before {
+    content: "PRIVACY POLICY";
+  }
+}
+.privacy-p {
+  font-size: rem(16);
+}
+.privacy-p__info {
+  text-align: right;
+  font-weight: bold;
+  margin-top: rem(30);
+}
+.privacy-p__message {
+  margin-top: rem(50);
+}
+.privacy-p__block {
+  margin-top: rem(30);
+  & p {
+    margin-top: rem(20);
+  }
+}
+.privacy-p-block__title {
+  & dl {
+    display: flex;
+    margin-top: rem(5);
+    & dd {
+      margin-left: rem(5);
+    }
+  }
+}
+.privacy-p-block__text {
+  display: flex;
+  margin-top: rem(5);
+  & dl {
+    display: flex;
+    margin-top: rem(5);
+    & dd {
+      margin-left: rem(5);
+    }
+  }
+  & dd {
+    margin-left: rem(5);
+  }
+}

@@ -1,0 +1,338 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.check__title::before {
+  content: "CHECK";
+}
+
+.contact {
+  margin-top: rem(50);
+  &__title::before {
+    content: "CONTACT";
+  }
+  &__subtitle {
+    font-size: rem(24);
+    text-align: center;
+    font-weight: bold;
+  }
+  &__text {
+    font-size: rem(16);
+    margin-top: rem(30);
+    text-align: center;
+    &--small {
+      font-size: rem(12);
+      margin-top: rem(30);
+      text-align: center;
+      & span {
+        color: rgba(6,87,173,1);
+      }
+
+    }
+  }
+
+}
+// 問い合わせフォームレイアウト
+.form__table {
+  font-size: rem(13);
+  max-width: rem(800);
+  width: 100%;
+  margin: rem(30) auto;
+  border: 1px solid $lightgray;
+  text-align-last: left;
+  font-weight: normal;
+  & tr {
+    border: 1px solid $lightgray;
+  }
+  & th {
+    width :40%;
+    background-color: #fafafa;
+    border: 1px solid $lightgray;
+    padding: rem(20);
+  }
+  & td {
+    border: 1px solid $lightgray;
+    padding: rem(15);
+  }
+  & td input {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid $lightgray;
+  }
+  & td textarea {
+    border: 1px solid $lightgray;
+    margin: 0 auto;
+    width: 100%;
+    height: 100px;
+  }
+}
+.form__content span {
+  background-color: rgba(6,87,173,1);
+  padding: rem(3) rem(7);
+  font-size: rem(10);
+  color: $white;
+  letter-spacing: 1.5;
+  &.form__optionary {
+    background-color: #555;
+  }
+}
+
+/*プライバシーのデザインcss↓*/
+.privacy {
+  max-width: rem(800);
+  width: 100%;
+  margin: 0  auto;
+}
+@media only screen and (max-width: 768px) {
+  .privacy {
+    width: 95%;
+  }
+}
+.privacy .privacy__outer {
+  height: 300px;
+  overflow-y: scroll;
+  border: 1px solid #cdcdcd;
+  background: #f7f7f7;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 20px;
+  padding: 20px 55px;
+}
+@media only screen and (max-width: 768px) {
+  .privacy .privacy__outer {
+    margin-top: 4%;
+    padding: 3%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .privacy .privacy__outer {
+    padding: 4%;
+  }
+}
+.privacy .privacy__outer .privacy__items
+ {
+  text-align: left;
+  margin-top: 40px;
+}
+@media only screen and (max-width: 768px) {
+  .privacy .privacy__outer .privacy__items
+   {
+    margin-top: 4%;
+  }
+}
+.privacy .privacy__outer .privacy__items h4 {
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: rem(26);
+}
+@media only screen and (max-width: 768px) {
+  .privacy .privacy__outer .privacy__items
+   h4 {
+    margin-bottom: 4%;
+  }
+}
+.privacy .privacy__outer .privacy__items
+ .privacy__text {
+  padding: 0 20px;
+  font-size: rem(16);
+}
+@media only screen and (max-width: 768px) {
+  .privacy .privacy__outer .privacy__items
+   .privacy__text {
+    padding: 0;
+  }
+}
+.privacy .privacy__outer .privacy__items {
+  margin-top: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .privacy .privacy__outer .privacy__items {
+    margin-top: 5%;
+  }
+}
+.privacy .privacy__outer .privacy__items h4 {
+  font-weight: normal;
+
+}
+.privacy .privacy__outer .privacy__items .privacy__text {
+  padding: 10px 0 0 20px;
+}
+@media only screen and (max-width: 768px) {
+  .privacy .privacy__outer .privacy__items .privacy__text {
+    padding: 3% 0 0 3%;
+  }
+}
+
+.privacy__check {
+  text-align: center;
+  margin: 1em auto;
+  font-size: rem(20);
+}
+.privacy__check label {
+  display: inline-block;
+}
+.my-checkbox {
+  display: block;
+  position: relative;
+  margin: 1em 0;
+  padding-left: 28px;
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  user-select: none; /* テキストが選択されてしまうのを防ぐ */
+  /* inputは非表示にする */
+  input {
+    display: none;
+  }
+}
+
+/* □ */
+.checkmark {
+  position: absolute;
+  top: 2px; /* 上からの位置 */
+  left: -2px;
+  height: 22px; /* 幅 */
+  width: 22px; /* 幅 */
+  border: solid 2px #d4dae2; /* 線 */
+  border-radius: 4px;
+  box-sizing: border-box;
+  /* ✓ */
+  &:after {
+    content: "";
+    position: absolute;
+    border: solid $white;
+    border-width: 0 2px 2px 0;
+    left: 5px;
+    top: 1px;
+    width: 6px;
+    height: 10px;
+    transform: rotate(45deg);
+    opacity: 0; /* 透明にしておく */
+  }
+}
+
+
+/* チェックが入ったとき */
+.my-checkbox {
+  /* □ */
+  input:checked + .checkmark {
+    background: #2e80ff; /* チェック時の色 */
+    border-color: #2e80ff; /* チェック時の色 */
+  }
+  /* ✓ */
+  input:checked + .checkmark:after {
+    opacity: 1;
+  }
+}
+
+
+.privacy__check label span {
+  margin-left: .3em;
+}
+.check__text {
+  font-size: rem(16);
+  text-align: center;
+  margin-top: rem(50);
+  & a {
+    text-decoration: underline;
+  }
+}
+.check__btns {
+  max-width: rem(700);
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-around;
+  display: flex;
+}
+
+
+.btn {
+  text-align: center;
+  font-size: rem(20);
+  display: inline-block;
+  background: rgba(6,87,173,1);
+  padding: 0.5em 2em;
+  color: $white;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.btn--back {
+  box-sizing: border-box;
+  font-size: rem(16);
+  font-weight: bold;
+  color: #0657ad;
+  background-color:$white;
+  border: 1px solid #0657ad;
+  padding: rem(10) rem(20);
+  border-radius: rem(5);
+  width: 250px;
+}
+
+
+// ラジオボタンCSS
+$color1: #f4f4f4;
+$color2: #3197EE;
+.radio {
+  display: flex;
+  flex-wrap: wrap;
+  input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    + .radio-label {
+      &:before {
+        content: '';
+        background: $color1;
+        border-radius: 100%;
+        border: 1px solid darken($color1, 25%);
+        display: inline-block;
+        width: 1.4em;
+        height: 1.4em;
+        position: relative;
+        // top: -0.2em;
+        margin-right: .5em;
+        margin-left: .5em;
+        vertical-align: top;
+        cursor: pointer;
+        text-align: center;
+        transition: all 250ms ease;
+      }
+    }
+    &:checked {
+      + .radio-label {
+        &:before {
+          background-color: $color2;
+          box-shadow: inset 0 0 0 4px $color1;
+        }
+      }
+    }
+    &:focus {
+      + .radio-label {
+        &:before {
+          outline: none;
+          border-color: $color2;
+        }
+      }
+    }
+    &:disabled {
+      + .radio-label {
+        &:before {
+          box-shadow: inset 0 0 0 4px $color1;
+          border-color: darken($color1, 25%);
+          background: darken($color1, 25%);
+        }
+      }
+    }
+    + .radio-label {
+      &:empty {
+        &:before {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,210 @@
+.result__inner {
+  max-width: rem(900);
+  width:100%;
+  margin: 0 auto;
+}
+.case {
+  padding: rem(20);
+  border: 1px solid $lightgray;
+  border-radius: rem(5);
+  &__outer {
+    margin-top: rem(30);
+  }
+  &__title {
+    font-size: rem(16);
+    &::before {
+      content:"New";
+      font-size: rem(10);
+      padding: rem(3) rem(5);
+      color: $pink;
+      border: 1px solid $pink;
+      position: relative;
+      top: rem(-2);
+    }
+  }
+  &__tags {
+    display: flex;
+    margin-top: rem(10);
+  }
+  &__tag {
+    font-size: rem(8);
+    padding:rem(2) rem(4);
+    background-color: #f5f5f5;
+    border-radius: rem(20);
+    &:not(:last-child) {
+      margin-right: rem(10);
+    }
+  }
+  &__table {
+    margin-top: rem(20);
+  }
+  &__detail {
+    margin-top: rem(30);
+  }
+}
+.case-table {
+  font-size: rem(14);
+  border-top: 1px solid $lightgray;
+  border-bottom: 1px solid $lightgray;
+  &__title {
+    font-weight: bold;
+    max-width: rem(150);
+    width: 100%;
+    padding: rem(6) rem(12);
+    background-color: #f5f5f5;
+  }
+  &__text {
+    width: 100%;
+    padding: rem(6) rem(12);
+    & span{
+      color: $pink;
+      font-size: rem(16);
+    }
+  }
+  &__item {
+    width: 100%;
+    display: flex;
+    &--harf {
+      display: flex;
+
+    }
+  }
+}
+.case-detail {
+  display: flex;
+  border-bottom: 1px dotted $lightgray;
+  padding-bottom: rem(15);
+  &__title {
+    max-width: rem(150);
+    width: 100%;
+    font-size: rem(14);
+    color: $navy;
+    font-weight: bold;
+  }
+  &__text {
+    font-size: rem(12);
+  }
+}
+.case-detail-block {
+  & dl {
+    display: flex;
+  }
+  &__title {
+    font-size: rem(12);
+    font-weight: bold;
+    width: rem(120);
+  }
+  &__text {
+    font-size: rem(12);
+  }
+}
+.case-about {
+  border-bottom: 1px dotted $lightgray;
+  padding-bottom: rem(15);
+  &__outer {
+    margin-top: rem(20);
+  }
+  &__text {
+    font-size: rem(16);
+    text-align: center;
+  }
+  &__btn a{
+    box-sizing: border-box;
+    font-size: rem(16);
+    font-weight: bold;
+    color: $white;
+    background-color: $navy;
+    padding: rem(10) rem(20);
+    border-radius: rem(5);
+    width: 250px;
+  }
+  &__btn {
+    text-align: center;
+  }
+}
+.case-advice {
+  &__message {
+    display: flex;
+  }
+  &__outer {
+    margin-top: rem(20);
+  }
+  &__title {
+    max-width: rem(150);
+    width: 100%;
+    font-size: rem(14);
+    color: $navy;
+    font-weight: bold;
+  }
+  &__text {
+    font-size: rem(12);
+    width: 100%;
+  }
+  &__btns {
+    display: flex;
+    margin-top: rem(30);
+    justify-content: space-evenly;
+  }
+
+  &__btn a{
+    box-sizing: border-box;
+    display: block;
+    padding: rem(10) rem(20);
+    font-size: rem(16);
+    border-radius: rem(5);
+    width: 250px;
+    text-align: center;
+    line-height:1;
+  }
+}
+
+.btn--pink a{
+  background-color: $pink;
+  color: $white;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.case-secret {
+  &__outer {
+    margin-top: rem(50);
+  }
+  &__img {
+    width: 30%;
+  }
+  &__wrapper {
+    display: flex;
+  }
+  &__title {
+    font-size: rem(20);
+
+    text-align: center;
+  }
+  &__text {
+    margin-top: rem(40);
+    font-size: rem(16);
+  }
+  &__reason {
+    font-size: rem(16);
+    margin-top: rem(20);
+  }
+  &__items {
+    margin-top: rem(10);
+  }
+  &__item {
+    font-size: rem(13);
+  }
+  &__btn a{
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+    padding: rem(10) rem(20);
+    font-size: rem(16);
+    border-radius: rem(5);
+    width: 250px;
+    margin: 0 auto;
+  }
+  &__btn {
+    margin-top: rem(20);
+  }
+}

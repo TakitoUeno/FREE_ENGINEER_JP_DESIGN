@@ -1,0 +1,29 @@
+.terms__title {
+  margin-top: rem(50);
+  &::before {
+    content: "TERMS";
+  }
+}
+.terms {
+  font-size: rem(16);
+}
+.terms__message {
+  margin-top: rem(50);
+}
+.terms__block {
+  margin-top: rem(30);
+}
+.terms-block__text {
+  display: flex;
+  margin-top: rem(5);
+  & dl {
+    display: flex;
+    margin-top: rem(5);
+    & dd {
+      margin-left: rem(5);
+    }
+  }
+  & dd {
+    margin-left: rem(5);
+  }
+}

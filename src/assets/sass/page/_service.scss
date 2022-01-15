@@ -1,0 +1,153 @@
+.service-flow__section-title {
+  margin-top: rem(50);
+}
+
+.service-flow__item {
+  border-top: 1px solid #ddd;
+  width: 100%;
+  margin-top: rem(30);
+}
+@media screen and (max-width: 540px) {
+  .service-flow__item {
+    border-top: 0;
+  }
+}
+.service-flow__item:nth-of-type(5) {
+  border-bottom: 1px solid #ddd;
+}
+.service-flow__content {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (max-width: 540px) {
+  .service-flow__content {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    flex-wrap: wrap;
+  }
+}
+.service-flow__content.one {
+  padding-top: 0;
+  margin-top: rem(30);
+}
+.service-flow__number {
+  position: absolute;
+  margin-right: 40px;
+  border-radius: 50%;
+  top: 30px;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  align-items: start;
+  background: #37789b;
+  color: #fff;
+  font-size: 36px;
+}
+.service-flow__number--top {
+  top: 0;
+}
+
+
+@media screen and (max-width: 540px) {
+  .service-flow__number {
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 24px;
+  }
+}
+.service-flow__line {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 1px;
+  background: #37789b;
+}
+.service-flow__line--1 {
+  top: -190%;
+  height: 310px;
+}
+.service-flow__line--2 {
+  top: -160%;
+  height: 270px;
+}
+.service-flow__line--3 {
+  top: -125%;
+  height: 220px;
+}
+.service-flow__line--4 {
+  top: -125%;
+  height: 220px;
+}
+
+@media screen and (max-width: 540px) {
+  .service-flow__line {
+    top: -80%;
+    width: 2px;
+    height: 72px;
+  }
+}
+.service-flow__text {
+  max-width: rem(700);
+
+}
+.service-flow__title {
+  margin-top: rem(20);
+  margin-right: 48px;
+  flex-basis: 298px;
+  color: #37789b;
+  font-size: 30px;
+}
+@media screen and (max-width: 540px) {
+  .service-flow__title {
+    margin-right: 0;
+    max-width: 230px;
+    font-size: 18px;
+  }
+}
+.service-flow__description {
+  line-height: 1.5;
+  font-size: 18px;
+  margin-top: rem(20);
+}
+@media screen and (max-width: 540px) {
+  .service-flow__description {
+    margin-left: 60px;
+    max-width: 260px;
+    font-weight: normal;
+    font-size: 13px;
+  }
+}
+.service-flow__resister-btn a {
+  font-size: rem(20);
+  background-color: $pink;
+  color: $white;
+  display: inline-block;
+  padding: rem(20) rem(50);
+  border-radius: rem(5);
+  font-weight: bold;
+
+  & span {
+    background-color: $white;
+    color: $pink;
+    padding: rem(5) rem(10);
+    margin-right: rem(10);
+    border-radius: rem(5);
+    font-weight: normal;
+
+  }
+}
+.service-flow__resister-btn--center  {
+  text-align: center;
+  margin-top: rem(50);
+}

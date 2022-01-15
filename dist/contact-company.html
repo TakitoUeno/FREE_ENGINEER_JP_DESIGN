@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <!-- css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Googlefonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Noto+Serif+JP:wght@200;300;400;700&display=swap" rel="stylesheet">
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script defer type="text/javascript" src="assets/js/index.js"></script>
+</head>
+<body>
+  <div id="page-top"></div>
+
+      <div class="header-seo__outer">
+        <div class="header-seo">
+        <h1 class="header-seo__ttl">フリーランスの案件・求人は『フリーエンジニア.jp』
+        </h1>
+        </div>
+      </div>
+      <div class="l-inner">
+        <div class="header-nav">
+          <div class="header-nav__outer">
+            <div class="header-nav__content">
+              <div class="header-nav__logo header-nav__logo--center">
+                <a href="#"><img src="assets/images/FE.jp-logoサブ有.jpg" alt="フリーエンジニア.jp"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="line__blue"></div>
+    <main>
+      <div class="l-inner">
+      <section class="contact">
+        <h2 class="contact__title section__title">お問い合わせ</h2>
+        <p class="contact__subtitle">（エンジニアをお探しの企業様向け）</p>
+          <p class="contact__text">フリーエンジニア.jpのサービスにご関心をお寄せいただき、ありがとうございます。<br>
+          以下のフォームに入力の上、ご送信ください。<br>
+          弊社担当者より3営業日以内に折り返しご連絡させていただきます。</p>
+          <p class="contact__text--small">※お急ぎの場合は、電話 (0120-xxx-xxx) にてお問い合わせください。</p>
+
+        <div class="form">
+          <form method="post" action="check-company.html">
+            <table class="form__table">
+              <tr>
+                <th class="form__content"><p>貴社名</p><p><span>必須</span></p></th>
+                <td><input type="text" name="貴社名" placeholder="例）株式会社フリーエンジニア" /></td>
+              </tr>
+              <th class="form__content"><p>部署名</p><p><span class="form__optionary">任意</span></p></th>
+                <td><input type="text" name="部署名" placeholder="例）人事部" /></td>
+              </tr>
+              <tr>
+                <th class="form__content"><p>ご担当者名</p><p><span>必須</span></p></th>
+                <td><input type="text" name="ご担当者名" placeholder="例）山田　太郎" /></td>
+              </tr>
+              <tr>
+                <th class="form__content"><p>フリガナ</p><p><span>必須</span></p></th>
+                <td><input type="text" class="wide" name="お名前" placeholder="例）ヤマダ　タロウ" /></td>
+              </tr>
+              <tr>
+                <th class="form__content"><p>電話番号</p><p><span>必須</span></p></th>
+                <td><input type="text" name="電話番号" placeholder="例）09012345678" /></td>
+              </tr>
+              <tr>
+                <th class="form__content"><p>メールアドレス</p><p><span>必須</span></p></th>
+                <td><input type="text" name="Email" placeholder="例）example@free-engineer.jp" /></td>
+              </tr>
+              <tr>
+                <th class="form__content"><p>確認用メールアドレス</p><p><span>必須</span></p></th>
+                <td><input  type="text" name="Email" placeholder="例）example@free-engineer.jp"/></td>
+              </tr>
+              <tr>
+                <th class="form__content"><p>ご希望のエリア<p><span>必須</span></p></th>
+                <td><div class="radio"><input  type="radio"  name="area" id="radio-1"/><label for="radio-1" class="radio-label">名古屋エリア</label><input  type="radio"  name="area" id="radio-2"/><label for="radio-2" class="radio-label">知多エリア</label><input  type="radio"  name="area" id="radio-3"/><label for="radio-3" class="radio-label">尾張エリア</label><input  type="radio"  name="area" id="radio-4"/><label for="radio-4" class="radio-label">西三河エリア</label><input  type="radio"  name="area" id="radio-5"/><label for="radio-5" class="radio-label">東三河エリア</label><input  type="radio"  name="area" id="radio-6"/><label for="radio-6" class="radio-label">リモート</label></div></td>
+              </tr>
+              <tr>
+                <th class="form__content"><p>お問い合わせ内容</p><p><span>必須</span></p></th>
+                <td><textarea name="お問い合わせ内容" row="5" placeholder="例）
+■作業内容
+■求めるスキル・経験
+■希望条件（職種・希望単価・稼働開始時期等）
+■お問い合わせの背景"></textarea></td>
+              </tr>
+            </table>
+
+
+
+          <div class="check__btns">
+            <p>
+              <span><input type="submit" class="btn btn--check" value="確認画面へ"/></span>
+            </p>
+          </div>
+        </form>
+
+        </div>
+      </section>
+    </main>
+  </div>
+
+    <div class="footer-submenu">
+      <ul class="footer-submenu__items footer-submenu__items--contact">
+        <li class="footer-submenu__item"><a href="company-info.html">運営会社について</a></li>
+        <li class="footer-submenu__item"><a href="terms.html" target="_blank" rel="noopener noreferrer">利用規約</a></li>
+        <li class="footer-submenu__item"><a href="privacy-policy.html" target="_blank" rel="noopener noreferrer">個人情報保護方針</a></li>
+        <li class="footer-submenu__item"><a href="#">よくある質問</a></li>
+      </ul>
+    </div>
+    <div class="l-footerBottom">
+      <div class="l-footerBottomInner">
+        <div class="footerLogoCompany">
+          <p class="footerLogoCompany__txtCopyright"><small>&copy; 2021 FreeEngineer.jp</small></p>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

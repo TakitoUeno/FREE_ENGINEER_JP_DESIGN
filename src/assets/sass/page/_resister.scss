@@ -1,0 +1,19 @@
+select {
+  border: 1px solid $lightgray;
+  border-radius: rem(5);
+  width: rem(40);
+
+}
+.resister__title::before{
+  content: "RESISTER";
+}
+.btn--check {
+  box-sizing: border-box;
+  font-size: rem(16);
+  font-weight: bold;
+  color: $white;
+  background-color:#0657ad;
+  padding: rem(10) rem(20);
+  border-radius: rem(5);
+  width: 250px;
+}

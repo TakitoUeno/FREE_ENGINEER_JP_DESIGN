@@ -1,0 +1,313 @@
+.header-seo {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+
+  &__ttl {
+    font-size: rem(16);
+    color: #505050;
+    max-width: rem(1000);
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.header-nav {
+  font-size: rem(20);
+  &__logo {
+    max-width: 400px;
+    width: 80%;
+    height:auto;
+    @include mq(sm) {
+      max-width: 300px;
+    }
+  }
+  &__logo--center {
+    margin: 0 auto;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    text-align: center;
+    margin-top: rem(10);
+    @include mq(lg) {
+      position: fixed;
+      bottom: rem(0);
+      left: 0;
+      z-index: 1;
+      background-color: #fff;
+      justify-content: space-around;
+      padding: rem(15) 0;
+    }
+    @include mq(sm) {
+      padding: rem(30) 0;
+    }
+
+    &--company a{
+      display: block;
+      font-size: rem(16);
+      margin-right: rem(30);
+      padding: rem(7) rem(10);
+      color: #37789b;
+      border: 2px solid #37789b;
+      width: 200px;
+      border-radius: rem(10);
+      @include mq(sm) {
+        width: 150px;
+      }
+    }
+    &--resister a{
+      display: block;
+      font-size: rem(16);
+      background-color: $pink;
+      color: $white;
+      padding: rem(5) rem(10);
+      width: 200px;
+      text-align: center;
+      border-radius: rem(10);
+      & span {
+        font-size: rem(20);
+        font-weight: bold;
+      }
+      @include mq(sm) {
+        width: 150px;
+      }
+    }
+  }
+}
+.global-nav {
+  width: 100%;
+}
+
+.global-nav__items {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+}
+
+.global-nav__item a {
+  color:#000;
+  font-size: rem(18);
+}
+
+.global-nav__item span {
+  width: 100%;
+  height: 40px;
+  margin: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.global-nav__subitems {
+  width: 100%;
+  background-color: #fff;
+}
+
+.global-nav__subitem {
+  visibility: hidden;
+  width: 100%;
+  height: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 16px;
+  opacity: 0;
+  transition: all 0.3s;
+  & a {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+  }
+}
+.global-nav__subitem.active {
+  visibility: visible;
+  // border-top: 1px solid #6ba6e7;
+  height: 32px;
+  opacity: 1;
+}
+
+.global-nav__subitem a {
+  color: #0657ad;
+}
+.fa-chevron-down {
+  transform: scale(0.6);
+  padding-left: rem(10);
+
+}
+
+
+.line__blue {
+  margin-top: rem(10);
+  height: rem(5);
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(6,87,173,1) 59%, rgba(9,9,121,1) 100%);
+}
+.line-gray {
+  max-width: 100%;
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+}
+// パンクズリスト
+.page-path {
+  display: flex;
+  &__outer {
+    margin-top: rem(20);
+  }
+  & li {
+    font-size: rem(13);
+    position: relative;
+    padding: 0 rem(13) 0 0;
+  }
+  & li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    border: 3px solid transparent;
+    border-left: 5px solid #555;
+  }
+}
+
+// ハンバーガーメニュー
+@include mq(lg) {
+.hamburger {
+  display : block;
+  position: fixed;
+  z-index : 3;
+  right : 25px;
+  top   : 50px;
+  width : 42px;
+  height: 42px;
+  cursor: pointer;
+  text-align: center;
+}
+.hamburger span {
+  display : block;
+  position: absolute;
+  width   : 30px;
+  height  : 2px ;
+  left    : 6px;
+  background : #333;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition   : 0.3s ease-in-out;
+  transition        : 0.3s ease-in-out;
+}
+.hamburger span:nth-child(1) {
+  top: 10px;
+}
+.hamburger span:nth-child(2) {
+  top: 20px;
+}
+.hamburger span:nth-child(3) {
+  top: 30px;
+}
+
+/* ナビ開いてる時のボタン */
+.hamburger.active span:nth-child(1) {
+  top : 16px;
+  left: 6px;
+  transform        : rotate(-45deg);
+}
+
+.hamburger.active span:nth-child(2),
+.hamburger.active span:nth-child(3) {
+  top: 16px;
+  transform        : rotate(45deg);
+}
+
+// ハンバーガー内部アコーディオンメニュー内容
+.global-nav {
+  position: fixed;
+  z-index : 2;
+  top  : 0;
+  left : 0;
+  color: #000;
+  background: #fff;
+  text-align: center;
+  transform: translateX(100%);
+  transition: all 0.6s;
+  width: 100%;
+}
+
+.global-nav__items {
+  background-color: #f7f8fa;
+  margin:0 auto;
+  padding-top:rem(150);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh;
+
+}
+
+.global-nav__item {
+  list-style-type: none;
+  padding: 0;
+  width: 50%;
+  margin: 0 auto;
+  border-top: 1px solid #fff;
+  text-align: left;
+  &:not(:last-child) {
+    border-bottom: 1px solid #fff;
+  }
+}
+.global-nav__item:last-child {
+  padding-bottom: 0;
+}
+.global-nav__item a:hover{
+  color: $navy;
+}
+
+.global-nav__item a {
+  display: block;
+  color: #000;
+  padding: 0;
+  text-decoration :none;
+  width: 100%;
+  margin: 0 auto;
+  font-size: rem(20);
+}
+.global-nav__subitem {
+  background-color: #f7f8fa;
+  & a {
+    padding-left: rem(20);
+    &:hover {
+      color: #0657ad;
+    }
+  }
+}
+.global-nav__spitems {
+  padding-top: rem(200);
+  font-size: rem(5);
+  text-align: center;
+}
+.global-nav__spitem {
+  padding: rem(10) 0;
+}
+
+/* このクラスを、jQueryで付与・削除する */
+.global-nav.active {
+  transform: translateX(0%);
+
+}
+}
+@include mq(sm) {
+  .hamburger {
+    transform: scale(0.8);
+    right: 15px;
+    top: 30px;
+  }
+}

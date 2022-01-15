@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <!-- css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Googlefonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Noto+Serif+JP:wght@200;300;400;700&display=swap" rel="stylesheet">
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script defer type="text/javascript" src="assets/js/index.js"></script>
+</head>
+<body>
+  <div id="page-top"></div>
+      <div class="header-seo__outer">
+        <div class="header-seo">
+        <h1 class="header-seo__ttl">フリーランスの案件・求人は『フリーエンジニア.jp』
+        </h1>
+        </div>
+      </div>
+      <div class="l-inner">
+        <div class="header-nav">
+          <div class="header-nav__outer">
+            <div class="header-nav__content">
+              <div class="header-nav__logo">
+                <a href="index.html"><img src="assets/images/FE.jp-logoサブ有.jpg" alt="フリーエンジニア.jp"></a>
+              </div>
+              <div class="header-nav__btns">
+                <ul class="header-nav__btn">
+                  <li class="header-nav__btn--company">
+                      <a href="contact-company.html">エンジニアを<br>お探しの企業様へ</a>
+                  </li>
+                  <li class="header-nav__btn--resister">
+                    <a href="contact-resister.html">簡単<span>60</span>秒で<br>無料登録</a></li>
+                </ul>
+
+                  <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div class="global-nav">
+                  <ul class="global-nav__items">
+                    <li class="global-nav__item">
+                      <span><a href="search.html" ><i class="fas fa-search"></i> 案件を探す</a></span>
+                    </li>
+                    <li class="global-nav__item">
+                      <span><a href="#!"><i class="fas fa-book-reader"></i> サービス紹介<i class="fas fa-chevron-down"></i></a></span>
+                      <ul class="global-nav__subitems">
+                        <li class="global-nav__subitem"><a href="service.html">ご利用の流れ</a></li>
+                        <li class="global-nav__subitem"><a href="#">サブメニュー②</a></li>
+                      </ul>
+                    </li>
+                    <li class="global-nav__item">
+                      <span><a href="#!"><i class="far fa-lightbulb"></i> お役立ちコンテンツ<i class="fas fa-chevron-down"></i> </a></span>
+                      <ul class="global-nav__subitems">
+                        <li class="global-nav__subitem"><a href="useful.html">収入見込みをチェック</a></li>
+                        <li class="global-nav__subitem"><a href="#">サブメニュー②</a></li>
+                      </ul>
+                    </li>
+                    <li class="global-nav__item">
+                      <ul class="global-nav__spitems u-mobile">
+                        <li class="global-nav__spitem"><a href="">運営会社について</a></li>
+                        <li class="global-nav__spitem"><a href="">利用規約</a></li>
+                        <li class="global-nav__spitem"><a href="">個人情報保護方針</a></li>
+                        <li class="global-nav__spitem"><a href="">よくある質問</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="line__blue"></div>
+    <main>
+    <div class="l-inner">
+    <div class="l-column l-column--subpage">
+      <div class="page-path__outer"></div>
+      <ul class="page-path">
+        <li class="page-path__link">
+          <a href="index.html">HOME</a>
+        </li>
+        <li class="page-path__link">
+          <a href="search.html">案件検索</a>
+        </li>
+        <li class="page-path__link">
+          <a href="#">フリーランス求人・案件</a>
+        </li>
+        <li class="page-path__link">絞り込み求人・案件検索
+        </li>
+      </ul>
+      <div class="l-contentWrap">
+        <div class="l-aside">
+          <form action="" accept-charset="utf-8">
+            <div class="sidebar">
+              <h2 class="sidebar__title">案件検索</h2>
+              <div class="search-freeword search-freeword__outer">
+                <p class="search-freeword__title">フリーワード検索</p>
+                <div class="search-freeword__btns">
+                  <input type="text" class="search-freeword__input" placeholder="Java 渋谷" name="keyword" value="">
+                  <input class="search-freeword__btn fas" type="submit" value="&#xf002; 検索">
+                </div>
+              </div>
+
+              <section class="search-select search-select__outer">
+                <ul class="search-select__items">
+                  <li class="search-select__item"><a href="">ジャンルで探す<i class="fas fa-chevron-circle-down fa-pull-right"></i></a>
+                    <ul class="search-select-tab__items">
+                      <li class="search-select-tab__item"><input type="checkbox" name="genre" id="genre-1"><label class="checkbox-btn" for="genre-1">Webアプリ開発</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="genre" id="genre-2"><label class="checkbox-btn" for="genre-2">業務アプリ開発</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="genre" id="genre-3"><label class="checkbox-btn" for="genre-3">インフラ / 運用/基盤系</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="genre" id="genre-4"><label class="checkbox-btn" for="genre-4">PM / PMO / コンサル等</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="genre" id="genre-5"><label class="checkbox-btn" for="genre-5">汎用機系</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="genre" id="genre-6"><label class="checkbox-btn" for="genre-6">組込系/制御系</label></li>
+                    </ul>
+                  </li>
+                  <li class="search-select__item"><a href="">エリアで探す<i class="fas fa-chevron-circle-down"></i></a>
+                    <ul class="search-select-tab__items">
+                      <li class="search-select-tab__item"><input type="checkbox" name="area" id="area-1"><label class="checkbox-btn" for="area-1">名古屋エリア</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="area" id="area-2"><label class="checkbox-btn" for="area-2">尾張エリア</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="area" id="area-3"><label class="checkbox-btn" for="area-3">知多エリア</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="area" id="area-4"><label class="checkbox-btn" for="area-4">西三河エリア</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="area" id="area-5"><label class="checkbox-btn" for="area-5">東三河エリア</label></li>
+                    </ul>
+                  </li>
+                  <li class="search-select__item"><a href="">スキルワードで探す<i class="fas fa-chevron-circle-down"></i></a>
+                    <ul class="search-select-tab__items">
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-1"><label class="checkbox-btn" for="skill-1">Java</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-2"><label class="checkbox-btn" for="skill-2">C言語</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-3"><label class="checkbox-btn" for="skill-3">C++</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-4"><label class="checkbox-btn" for="skill-4">VC++</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-5"><label class="checkbox-btn" for="skill-5">VB / VBA</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-6"><label class="checkbox-btn" for="skill-6">.NET(VB / C#)</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-7"><label class="checkbox-btn" for="skill-7">React</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-8"><label class="checkbox-btn" for="skill-8">SQL</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-9"><label class="checkbox-btn" for="skill-9">JavaScript</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-10"><label class="checkbox-btn" for="skill-10">PHP</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-11"><label class="checkbox-btn" for="skill-11">Perl</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-12"><label class="checkbox-btn" for="skill-12">Ruby</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-13"><label class="checkbox-btn" for="skill-13">Python</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-14"><label class="checkbox-btn" for="skill-14">Shell(C/B/K)</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-15"><label class="checkbox-btn" for="skill-15">iOS</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-16"><label class="checkbox-btn" for="skill-16">Android</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-17"><label class="checkbox-btn" for="skill-17">Objective-C</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-18"><label class="checkbox-btn" for="skill-18">Swift</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-19"><label class="checkbox-btn" for="skill-19">Kotlin</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-20"><label class="checkbox-btn" for="skill-20">HTML5</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-21"><label class="checkbox-btn" for="skill-21">データベース</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-22"><label class="checkbox-btn" for="skill-22">アセンブラ</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-23"><label class="checkbox-btn" for="skill-23">COBOL</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-24"><label class="checkbox-btn" for="skill-24">インフラ(サーバー)</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-25"><label class="checkbox-btn" for="skill-25">インフラ(ネットワーク)</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-26"><label class="checkbox-btn" for="skill-26">インフラ(その他)</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-27"><label class="checkbox-btn" for="skill-27">PM</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-28"><label class="checkbox-btn" for="skill-28">PMO</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-29"><label class="checkbox-btn" for="skill-29">コンサルティング</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-30"><label class="checkbox-btn" for="skill-30">ITアーキテクト</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-31"><label class="checkbox-btn" for="skill-31">DX</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-32"><label class="checkbox-btn" for="skill-32">テスト / 検証</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-33"><label class="checkbox-btn" for="skill-33">Webディレクター</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-34"><label class="checkbox-btn" for="skill-34">ERP</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-35"><label class="checkbox-btn" for="skill-35">AWS</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-36"><label class="checkbox-btn" for="skill-36">Azure</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-37"><label class="checkbox-btn" for="skill-37">GCP</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-38"><label class="checkbox-btn" for="skill-38">パブリッククラウド</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-39"><label class="checkbox-btn" for="skill-39">ゲーム</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-40"><label class="checkbox-btn" for="skill-40">Unity</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-41"><label class="checkbox-btn" for="skill-41">Scala</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-42"><label class="checkbox-btn" for="skill-42">golang</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-43"><label class="checkbox-btn" for="skill-43">RPA</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-44"><label class="checkbox-btn" for="skill-44">Chef</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-45"><label class="checkbox-btn" for="skill-45">Puppet</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-46"><label class="checkbox-btn" for="skill-46">Ansible</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-47"><label class="checkbox-btn" for="skill-47">IoT</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-48"><label class="checkbox-btn" for="skill-48">AI・機械学習</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="skill" id="skill-49"><label class="checkbox-btn" for="skill-49">その他言語</label></li>
+                    </ul>
+                  </li>
+                  <li class="search-select__item"><a href="">希望単価で探す<i class="fas fa-chevron-circle-down"></i></a>
+                    <ul class="search-select-tab__items">
+                      <li class="search-select-tab__item"><input type="checkbox" name="price" id="price-1"><label class="checkbox-btn" for="price-1">50万円以上</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="price" id="price-2"><label class="checkbox-btn" for="price-2">60万円以上</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="price" id="price-3"><label class="checkbox-btn" for="price-3">70万円以上</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="price" id="price-4"><label class="checkbox-btn" for="price-4">80万円以上</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="price" id="price-5"><label class="checkbox-btn" for="price-5">90万円以上</label></li>
+                    </ul>
+                  </li>
+                  <li class="search-select__item"><a href="">特徴で探す<i class="fas fa-chevron-circle-down"></i></a>
+                    <ul class="search-select-tab__items">
+                      <li class="search-select-tab__item"><input type="checkbox" name="feature" id="feature-1"><label class="checkbox-btn" for="feature-1">担当者オススメ案件</a></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="feature" id="feature-2"><label class="checkbox-btn" for="feature-2">エンド直</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="feature" id="feature-3"><label class="checkbox-btn" for="feature-3">元請け直</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="feature" id="feature-4"><label class="checkbox-btn" for="feature-4">スタートアップ</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="feature" id="feature-5"><label class="checkbox-btn" for="feature-5">高単価</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="feature" id="feature-6"><label class="checkbox-btn" for="feature-6">短期案件</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="feature" id="feature-7"><label class="checkbox-btn" for="feature-7">長期案件</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="feature" id="feature-8"><label class="checkbox-btn" for="feature-8">週1〜4可</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="feature" id="feature-9"><label class="checkbox-btn" for="feature-9">リモート可</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="feature" id="feature-10"><label class="checkbox-btn" for="feature-10">時短勤務可</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="feature" id="feature-11"><label class="checkbox-btn" for="feature-11">稼働安定</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="feature" id="feature-12"><label class="checkbox-btn" for="feature-12">駅近く</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="feature" id="feature-13"><label class="checkbox-btn" for="feature-13">車通勤可</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="feature" id="feature-14"><label class="checkbox-btn" for="feature-14">20代活躍中</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="feature" id="feature-15"><label class="checkbox-btn" for="feature-15">女性多数活躍中</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="feature" id="feature-16"><label class="checkbox-btn" for="feature-16">私服 / ビジネスカジュアル可</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="feature" id="feature-17"><label class="checkbox-btn" for="feature-17">最新技術</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="feature" id="feature-18"><label class="checkbox-btn" for="feature-18">担当者オススメ案件</label></li>
+                      <li class="search-select-tab__item"><input type="checkbox" name="feature" id="feature-19"><label class="checkbox-btn" for="feature-19">4月スタート案件</label></li>
+                    </ul>
+                  </li>
+                </ul>
+              </section>
+              <div class="searchResult">
+                <p class="searchResult__txt">この条件の案件数<span>32153</span>件</p>
+                <div class="searchResult__btns">
+                  <input id="" class="searchResult__btn reset-btn" type="submit" value="条件クリア"/>
+                  <input id="" class="searchResult__btn" type="submit" value="検索する"/>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="l-main">
+          <div class="search__wrapper">
+            <div class="search">
+              <h2 class="search__ttl">絞り込み検索の求人・案件一覧</h2>
+              <div class="search__result">
+                <ul class="searchResultControls">
+                  <li class="searchResultControls__item">該当案件数<span>31959</span>件中 1~40件を表示</li>
+                  <li class="searchResultControls__item">
+                    <input type="checkbox" name="search" id=""><label class="checkbox-btn" for="">公開中の案件のみ表示</label>
+                    </label>
+                  </li>
+                  <li class="searchResultControls__item">
+                    <select name="order" class="search-genre-btn" id="">
+                      <option value="1">新着順</option>
+                      <option value="2">単価順</option>
+                      <option value="3" selected>関連度順</option>
+                    </select>
+                  </li>
+                </ul>
+              </div>
+            </div>
+              <ul class="prjList">
+                <li class="prjList__item js-link">
+                  <div class="prjHead prjHead--label">
+                    <div class="prjLabel prjLabel--new">
+                      <p class="prjLabel__txt">New</p>
+                    </div>
+                    <h3 class="prjHead__ttl">
+                    <a href="" class="">【COBOL】酒類会社向け販売物流システム開発</a> の求人・案件</h3>
+                  </div>
+                  <div class="prjContent">
+                    <ul class="prjContent__summary">
+                      <li class="prjContent__summary__price"><i class="fas fa-yen-sign"></i> ～<span>650,000円</span>／月</li>
+                      <li class="prjContent__summary__location"><i class="fas fa-map-marker-alt"></i> 勝どき（東京都)</li>
+                      <li class="prjContent__summary__contract"><i class="fas  fa-user-circle"></i> 業務委託（フリーランス）</li>
+                    </ul>
+                    <ul class="prjContent__feature">
+                      <li class="prjContent__feature__item">リモートOK</li>
+                      <li class="prjContent__feature__item">40代活躍中</li>
+                      <li class="prjContent__feature__item">30代活躍中</li>
+                    </ul>
+                    <ul class="prjTable">
+                      <li class="prjTable__item">
+                        <p class="prjTable__item__ttl">開発環境</p>
+                        <p class="prjTable__item__desc">
+                          JCL
+                          SQL
+                          COBOL
+                        </p>
+                      </li>
+                      <li class="prjTable__item">
+                        <p class="prjTable__item__ttl">求めるスキル</p>
+                        <p class="prjTable__item__desc prjTable__item__desc--clamp">・COBOLを用いた開発経験<br/>
+                        </p>
+                      </li>
+                      <li class="prjTable__item">
+                        <p class="prjTable__item__ttl">募集職種</p>
+                        <p class="prjTable__item__desc">
+                        システムエンジニア(SE)
+                        </p>
+                      </li>
+                    </ul>
+                    <ul class="prjBtn">
+                      <li class="prjBtn__keep">
+                        <a href="##" >この案件について相談する</a>
+                      </li>
+                      <li class="prjBtn__detail">
+                        <a href="result.html">詳細を見る</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="prjList__item">
+                  <div class="prjHead prjHead--label">
+                    <div class="prjLabel prjLabel--new">
+                      <p class="prjLabel__txt">New</p>
+                    </div>
+                    <h3 class="prjHead__ttl">
+                      <a href="" class="" target="_blank">【Java/JavaScript】ワークフローパッケージ開発</a> の求人・案件</h3>
+                  </div>
+                  <div class="prjContent">
+                  <ul class="prjContent__summary">
+                    <li class="prjContent__summary__price"><i class="fas fa-yen-sign"></i> ～<span>800,000円</span>／月</li>
+                    <li class="prjContent__summary__location"><i class="fas fa-map-marker-alt"></i> 有楽町（東京都)</li>
+                    <li class="prjContent__summary__contract"><i class="fas  fa-user-circle"></i> 業務委託（フリーランス）</li>
+                  </ul>
+                  <ul class="prjContent__feature">
+                    <li class="prjContent__feature__item">長期案件</li>
+                    <li class="prjContent__feature__item">上場企業</li>
+                  </ul>
+                  <ul class="prjTable">
+                    <li class="prjTable__item">
+                      <p class="prjTable__item__ttl">開発環境</p>
+                      <p class="prjTable__item__desc">
+                      Google Cloud Platform
+                      Spring
+                      AngularJS
+                      Java
+                      JavaScript
+                      HTML
+                      Backlog
+                      Git
+                      MySQL
+                      </p>
+                    </li>
+                    <li class="prjTable__item">
+                      <p class="prjTable__item__ttl">求めるスキル</p>
+                      <p class="prjTable__item__desc prjTable__item__desc--clamp">・JavaScriptを用いたシステム開発経験<br/>
+                      ・システムの保守運用経験<br/>
+                      ・サーバーサイドの開発経験<br/>
+                      </p>
+                    </li>
+                    <li class="prjTable__item">
+                      <p class="prjTable__item__ttl">募集職種</p>
+                      <p class="prjTable__item__desc">
+                      社内SE
+                      システムエンジニア(SE)
+                      </p>
+                    </li>
+                  </ul>
+                  <ul class="prjBtn">
+                    <li class="prjBtn__keep">
+                      <a href="#" >この案件について相談する</a>
+                    </li>
+                    <li class="prjBtn__detail">
+                      <a href="result.html">詳細を見る</a>
+                    </li>
+                  </ul>
+                  </div>
+                </li>
+                <li class="prjList__item js-link">
+                  <div class="prjHead prjHead--label">
+                    <div class="prjLabel prjLabel--new">
+                      <p class="prjLabel__txt">New</p>
+                    </div>
+                    <h3 class="prjHead__ttl">
+                      <a href="" class="">【C言語】自動車サプライヤ向け画像センサー開発</a> の求人・案件</h3>
+                  </div>
+                  <div class="prjContent">
+                    <ul class="prjContent__summary">
+                      <li class="prjContent__summary__price">
+                      <i class="fas fa-yen-sign"></i> ～<span>650,000円</span>／月
+                      </li>
+                      <li class="prjContent__summary__location"><i class="fas fa-map-marker-alt"></i>
+                      北府中（東京都)
+                      </li>
+                      <li class="prjContent__summary__contract">
+                      <i class="fas  fa-user-circle"></i> 業務委託（フリーランス） </li>
+                    </ul>
+                    <ul class="prjContent__feature">
+                      <li class="prjContent__feature__item">40代活躍中</li>
+                      <li class="prjContent__feature__item">30代活躍中</li>
+                    </ul>
+                    <ul class="prjTable">
+                      <li class="prjTable__item">
+                        <p class="prjTable__item__ttl">開発環境</p>
+                        <p class="prjTable__item__desc">
+                        C言語
+                        </p>
+                      </li>
+                      <li class="prjTable__item">
+                        <p class="prjTable__item__ttl">求めるスキル</p>
+                        <p class="prjTable__item__desc prjTable__item__desc--clamp">・C言語を用いた組込み開発経験<br/>
+                        ・ドキュメント作成経験<br/>
+                        </p>
+                      </li>
+                      <li class="prjTable__item">
+                        <p class="prjTable__item__ttl">募集職種</p>
+                        <p class="prjTable__item__desc">
+                        システムエンジニア(SE)
+                        </p>
+                      </li>
+                    </ul>
+                    <ul class="prjBtn">
+                      <li class="prjBtn__keep">
+                        <a href="#" >この案件について相談する</a>
+                        </li>
+                        <li class="prjBtn__detail">
+                        <a href="result.html">詳細を見る</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="prjList__item js-link">
+                  <div class="prjHead prjHead--label">
+                    <div class="prjLabel prjLabel--new">
+                      <p class="prjLabel__txt">New</p>
+                    </div>
+                    <h3 class="prjHead__ttl">
+                      <a href="" class="">自動車販売関連システム開発/維持運用/管理</a> の求人・案件</h3>
+                  </div>
+                  <div class="prjContent">
+                  <ul class="prjContent__summary">
+                    <li class="prjContent__summary__price"><i class="fas fa-yen-sign"></i> ～<span>650,000円</span>／月</li>
+                    <li class="prjContent__summary__location"><i class="fas fa-map-marker-alt"></i> 和光市（埼玉県)</li>
+                    <li class="prjContent__summary__contract"><i class="fas  fa-user-circle"></i> 業務委託（フリーランス） </li>
+                  </ul>
+                  <ul class="prjTable">
+                    <li class="prjTable__item">
+                      <p class="prjTable__item__ttl">開発環境</p>
+                      <p class="prjTable__item__desc">
+                      Java
+                      SQL
+                      Oracle
+                      DB2
+                      </p>
+                    </li>
+                    <li class="prjTable__item">
+                      <p class="prjTable__item__ttl">求めるスキル</p>
+                      <p class="prjTable__item__desc prjTable__item__desc--clamp">・RHEL7における簡単なコマンド把握<br/>
+                      ・ShellScriptを利用した開発経験<br/>
+                      ・SQL/Oracle/DB2などのRDB利用経験<br/>
+                      ・バッチシステム開発（詳細設計、実装、単体テスト）の経験<br/>
+                      </p>
+                    </li>
+                  </ul>
+                  <ul class="prjBtn">
+                    <li class="prjBtn__keep">
+                      <a href="#" >この案件について相談する</a>
+                    </li>
+                    <li class="prjBtn__detail">
+                      <a href="result.html">詳細を見る</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="prjList__item js-link">
+                <div class="prjHead prjHead--label">
+                  <div class="prjLabel prjLabel--new">
+                    <p class="prjLabel__txt">New</p>
+                  </div>
+                  <h3 class="prjHead__ttl">
+                    <a href="" class="">【Unity/C++】スマホ向けオンラインゲーム開発</a> の求人・案件</h3>
+                </div>
+                <div class="prjContent">
+                  <ul class="prjContent__summary">
+                    <li class="prjContent__summary__price"><i class="fas fa-yen-sign"></i> ～<span>600,000円</span>／月</li>
+                    <li class="prjContent__summary__location"><i class="fas fa-map-marker-alt"></i> 東京（東京都)</li>
+                    <li class="prjContent__summary__contract"><i class="fas  fa-user-circle"></i> 業務委託（フリーランス） </li>
+                  </ul>
+                  <ul class="prjContent__feature">
+                    <li class="prjContent__feature__item">リモートOK</li>
+                    <li class="prjContent__feature__item">長期案件</li>
+                    <li class="prjContent__feature__item">BtoC向け</li>
+                    <li class="prjContent__feature__item">ゲーム好き歓迎</li>
+                  </ul>
+                  <ul class="prjTable">
+                    <li class="prjTable__item">
+                      <p class="prjTable__item__ttl">開発環境</p>
+                      <p class="prjTable__item__desc">
+                      Unity
+                      C#
+                      GitHub
+                      Jenkins
+                      C++
+                      </p>
+                    </li>
+                    <li class="prjTable__item">
+                      <p class="prjTable__item__ttl">求めるスキル</p>
+                      <p class="prjTable__item__desc prjTable__item__desc--clamp">・ゲーム開発経験2年以上<br/>
+                      </p>
+                    </li>
+                    <li class="prjTable__item">
+                      <p class="prjTable__item__ttl">募集職種</p>
+                      <p class="prjTable__item__desc">
+                      システムエンジニア(SE)
+                      プログラマ(PG)
+                      </p>
+                    </li>
+                  </ul>
+                  <ul class="prjBtn">
+                    <li class="prjBtn__keep">
+                      <a href="#" >この案件について相談する</a>
+                    </li>
+                    <li class="prjBtn__detail">
+                      <a href="result.html">詳細を見る</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="prjList__item js-link">
+                <div class="prjHead prjHead--label">
+                  <div class="prjLabel prjLabel--new">
+                    <p class="prjLabel__txt">New</p>
+                  </div>
+                  <h3 class="prjHead__ttl">
+                    <a href="" class="">【Node.js/Python】大手通信企業のWebサービス開発</a> の求人・案件</h3>
+                </div>
+                <div class="prjContent">
+                  <ul class="prjContent__summary">
+                    <li class="prjContent__summary__price"><i class="fas fa-yen-sign"></i> ～<span>850,000円</span>／月</li>
+                    <li class="prjContent__summary__location"><i class="fas fa-map-marker-alt"></i> 渋谷（東京都)</li>
+                    <li class="prjContent__summary__contract"><i class="fas  fa-user-circle"></i> 業務委託（フリーランス）</li>
+                  </ul>
+                  <ul class="prjContent__feature">
+                    <li class="prjContent__feature__item">リモートOK</li>
+                    <li class="prjContent__feature__item">20代活躍中</li>
+                    <li class="prjContent__feature__item">30代活躍中</li>
+                    <li class="prjContent__feature__item">急募</li>
+                  </ul>
+                  <ul class="prjTable">
+                    <li class="prjTable__item">
+                      <p class="prjTable__item__ttl">開発環境</p>
+                      <p class="prjTable__item__desc">
+                      Node.js
+                      React
+                      JavaScript
+                      HTML
+                      Python
+                      Git
+                      JIRA
+                      MongoDB
+                      </p>
+                    </li>
+                    <li class="prjTable__item">
+                      <p class="prjTable__item__ttl">求めるスキル</p>
+                      <p class="prjTable__item__desc prjTable__item__desc--clamp">・Nodejs/Pythonの開発経験<br/>
+                      ・MySQL/MongoDBなどのDB設計、開発経験<br/>
+                      ・AWS環境構築の経験<br/>
+                      </p>
+                    </li>
+                  </ul>
+                  <ul class="prjBtn">
+                    <li class="prjBtn__keep">
+                      <a href="#" >この案件について相談する</a>
+                    </li>
+                    <li class="prjBtn__detail">
+                      <a href="result.html">詳細を見る</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="prjList__item js-link">
+                <div class="prjHead prjHead--label">
+                  <div class="prjLabel prjLabel--new">
+                    <p class="prjLabel__txt">New</p>
+                  </div>
+                  <h3 class="prjHead__ttl">
+                  <a href="" class="">【Python】SaaSシステム新規機能追加</a> の求人・案件</h3>
+                </div>
+                <div class="prjContent">
+                  <ul class="prjContent__summary">
+                    <li class="prjContent__summary__price"><i class="fas fa-yen-sign"></i> ～<span>900,000円</span>／月</li>
+                    <li class="prjContent__summary__location"><i class="fas fa-map-marker-alt"></i> 渋谷（東京都)</li>
+                    <li class="prjContent__summary__contract"><i class="fas  fa-user-circle"></i> 業務委託（フリーランス） </li>
+                  </ul>
+                  <ul class="prjContent__feature">
+                    <li class="prjContent__feature__item">リモートOK</li>
+                    <li class="prjContent__feature__item">参画実績あり</li>
+                    <li class="prjContent__feature__item">長期案件</li>
+                    <li class="prjContent__feature__item">新技術に積極的</li>
+                    <li class="prjContent__feature__item">20代活躍中</li>
+                    <li class="prjContent__feature__item">30代活躍中</li>
+                  </ul>
+                  <ul class="prjTable">
+                    <li class="prjTable__item">
+                      <p class="prjTable__item__ttl">開発環境</p>
+                      <p class="prjTable__item__desc">
+                      Django
+                      Python
+                      Docker
+                      Linux
+                      </p>
+                    </li>
+                    <li class="prjTable__item">
+                      <p class="prjTable__item__ttl">求めるスキル</p>
+                      <p class="prjTable__item__desc prjTable__item__desc--clamp">・Pythonを用いた実務開発経験<br/>
+                      ・新規機能追加業務<br/>
+                      </p>
+                    </li>
+                    <li class="prjTable__item">
+                      <p class="prjTable__item__ttl">募集職種</p>
+                      <p class="prjTable__item__desc">
+                      システムエンジニア(SE)
+                      プログラマ(PG)
+                      </p>
+                    </li>
+                  </ul>
+                  <ul class="prjBtn">
+                    <li class="prjBtn__keep">
+                      <a href="#" >この案件について相談する</a>
+                    </li>
+                    <li class="prjBtn__detail">
+                      <a href="result.html">詳細を見る</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="prjList__item js-link">
+                <div class="prjHead prjHead--label">
+                  <div class="prjLabel prjLabel--new">
+                    <p class="prjLabel__txt">New</p>
+                  </div>
+                  <h3 class="prjHead__ttl">
+                  <a href="" class="">【C++】保護リレーシステム開発</a> の求人・案件</h3>
+                </div>
+                <div class="prjContent">
+                  <ul class="prjContent__summary">
+                    <li class="prjContent__summary__price"><i class="fas fa-yen-sign"></i> ～<span>500,000円</span>／月</li>
+                    <li class="prjContent__summary__location"><i class="fas fa-map-marker-alt"></i> 和田岬（兵庫県)</li>
+                    <li class="prjContent__summary__contract"><i class="fas  fa-user-circle"></i> 業務委託（フリーランス） </li>
+                  </ul>
+                  <ul class="prjContent__feature">
+                    <li class="prjContent__feature__item">長期案件</li>
+                  </ul>
+                  <ul class="prjTable">
+                    <li class="prjTable__item">
+                      <p class="prjTable__item__ttl">開発環境</p>
+                      <p class="prjTable__item__desc">
+                      C++
+                      C言語
+                      </p>
+                    </li>
+                    <li class="prjTable__item">
+                      <p class="prjTable__item__ttl">求めるスキル</p>
+                      <p class="prjTable__item__desc prjTable__item__desc--clamp">・C++、またはC言語を用いた業務経験2年以上<br/>
+                      ・未経験言語について自身で勉強して取り組むことができる方<br/>
+                      </p>
+                    </li>
+                    <li class="prjTable__item">
+                      <p class="prjTable__item__ttl">募集職種</p>
+                      <p class="prjTable__item__desc">
+                      システムエンジニア(SE)
+                      プログラマ(PG)
+                      </p>
+                    </li>
+                  </ul>
+                  <ul class="prjBtn">
+                    <li class="prjBtn__keep">
+                      <a href="#" >この案件について相談する</a>
+                    </li>
+                    <li class="prjBtn__detail">
+                      <a href="result.html">詳細を見る</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="prjList__item js-link">
+                <div class="prjHead prjHead--label">
+                  <div class="prjLabel prjLabel--new">
+                    <p class="prjLabel__txt">New</p>
+                  </div>
+                  <h3 class="prjHead__ttl">
+                  <a href="" class="">【Python】銀行私書箱システム開発</a> の求人・案件</h3>
+                </div>
+                <div class="prjContent">
+                  <ul class="prjContent__summary">
+                    <li class="prjContent__summary__price"><i class="fas fa-yen-sign"></i> ～<span>650,000円</span>／月</li>
+                    <li class="prjContent__summary__location"><i class="fas fa-map-marker-alt"></i> 虎ノ門（東京都)</li>
+                    <li class="prjContent__summary__contract"><i class="fas  fa-user-circle"></i> 業務委託（フリーランス） </li>
+                  </ul>
+                  <ul class="prjContent__feature">
+                    <li class="prjContent__feature__item">40代活躍中</li>
+                    <li class="prjContent__feature__item">30代活躍中</li>
+                  </ul>
+                  <ul class="prjTable">
+                    <li class="prjTable__item">
+                      <p class="prjTable__item__ttl">開発環境</p>
+                      <p class="prjTable__item__desc">
+                      Python
+                      </p>
+                    </li>
+                    <li class="prjTable__item">
+                      <p class="prjTable__item__ttl">求めるスキル</p>
+                      <p class="prjTable__item__desc prjTable__item__desc--clamp">・AWS環境での開発経験<br/>
+                      ・Pythonを用いた開発経験<br/>
+                      ・設計書などのドキュメント作成経験<br/>
+                      </p>
+                    </li>
+                    <li class="prjTable__item">
+                      <p class="prjTable__item__ttl">募集職種</p>
+                      <p class="prjTable__item__desc">
+                      システムエンジニア(SE)
+                      </p>
+                    </li>
+                  </ul>
+                  <ul class="prjBtn">
+                    <li class="prjBtn__keep">
+                      <a href="#" >この案件について相談する</a>
+                    </li>
+                    <li class="prjBtn__detail">
+                      <a href="result.html">詳細を見る</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="prjList__item js-link">
+                <div class="prjHead prjHead--label">
+                  <div class="prjLabel prjLabel--new">
+                    <p class="prjLabel__txt">New</p>
+                  </div>
+                  <h3 class="prjHead__ttl">
+                  <a href="" class="">【JavaScript】大手航空会社サイトリニューアル</a> の求人・案件</h3>
+                </div>
+                <div class="prjContent">
+                  <ul class="prjContent__summary">
+                    <li class="prjContent__summary__price"><i class="fas fa-yen-sign"></i> ～<span>600,000円</span>／月</li>
+                    <li class="prjContent__summary__location"><i class="fas fa-map-marker-alt"></i> 勝どき（東京都)</li>
+                    <li class="prjContent__summary__contract"><i class="fas  fa-user-circle"></i> 業務委託（フリーランス） </li>
+                  </ul>
+                  <ul class="prjContent__feature">
+                    <li class="prjContent__feature__item">リモートOK</li>
+                    <li class="prjContent__feature__item">新技術に積極的</li>
+                    <li class="prjContent__feature__item">急募</li>
+                    <li class="prjContent__feature__item">自社内開発が多い</li>
+                  </ul>
+                  <ul class="prjTable">
+                    <li class="prjTable__item">
+                      <p class="prjTable__item__ttl">開発環境</p>
+                      <p class="prjTable__item__desc">
+                      Node.js
+                      JavaScript
+                      HTML
+                      CSS
+                      </p>
+                    </li>
+                    <li class="prjTable__item">
+                      <p class="prjTable__item__ttl">求めるスキル</p>
+                      <p class="prjTable__item__desc prjTable__item__desc--clamp">・JavaScriptの開発経験2年以上<br/>
+                      ・UI/UXの改善経験<br/>
+                      </p>
+                    </li>
+                    <li class="prjTable__item">
+                      <p class="prjTable__item__ttl">募集職種</p>
+                      <p class="prjTable__item__desc">
+                      フロントエンドエンジニア
+                      </p>
+                    </li>
+                  </ul>
+                  <ul class="prjBtn">
+                    <li class="prjBtn__keep">
+                      <a href="#" >この案件について相談する</a>
+                    </li>
+                    <li class="prjBtn__detail">
+                      <a href="result.html">詳細を見る</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              </ul>
+              <ul class="pagination pagination__outer x-clearFix">
+                <li class="pagination__list pagination__list--first"><a href=""><<</a></li>
+                <li class="pagination__list pagination__list--prev"><a class="prev disabled">Prev</a></li>
+                <li class="pagination__list--active pagination__list"><a>1</a></li>
+                <li class="pagination__list"><a href="#">2</a></li>
+                <li class="pagination__list"><a href="#">3</a></li><li class="pagination__list"><a href="#">4</a></li>
+                <li class="pagination__list"><a href="#">5</a></li>
+                <li class="pagination__list"><a href="#">6</a></li>
+                <li class="pagination__list"><a href="#">7</a></li>
+                <li class="pagination__list"><a href="#">8</a></li>
+                <li class="pagination__list"><a href="#">9</a></li>
+                <li class="pagination__list pagination__list--next"><span class="next"><a href="#" rel="next">Next</a></span></li>
+                <li class="pagination__list pagination__list--last"><span><a href="" rel="last">>></a></span></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </main>
+  </div>
+  <div class="l-footer">
+    <div class="l-inner">
+      <p class="to-top-btn"><a href="#page-top">top</a></p>
+      <div class="footerRecommend__item">
+        <p class="footerRecommend__ttl">おすすめのエリア
+        </p>
+        <ul class="footerHList footerHList__links">
+          <li class="footerHList__link"><a href="#">名古屋エリア</a></li>
+          <li class="footerHList__link"><a href="#">尾張エリア</a></li>
+          <li class="footerHList__link"><a href="#">知多エリア</a></li>
+          <li class="footerHList__link"><a href="#">西三河エリア</a></li>
+          <li class="footerHList__link"><a href="#">東三河エリア</a></li>
+        </ul>
+      </div>
+      <div class="footerRecommend__item">
+        <p class="footerRecommend__ttl">おすすめのジャンル
+        </p>
+        <ul class="footerHList footerHList__links">
+          <li class="footerHList__link"><a href="#">Webアプリ開発</a></li>
+          <li class="footerHList__link"><a href="#">業務アプリ開発</a></li>
+          <li class="footerHList__link"><a href="#">インフラ/運用/基盤系
+          </a></li>
+          <li class="footerHList__link"><a href="#">PM/PMO/コンサル等</a></li>
+          <li class="footerHList__link"><a href="#">汎用機等</a></li>
+          <li class="footerHList__link"><a href="#">組込/制御系</a></li>
+          <li class="footerHList__link"><a href="#">VBAの求人・案件</a></li>
+          <li class="footerHList__link"><a href="#">C#の求人・案件</a></li>
+          <li class="footerHList__link"><a href="#">JavaScriptの求人・案件</a></li>
+          <li class="footerHList__link"><a href="#">Swiftの求人・案件</a></li>
+          <li class="footerHList__link"><a href="#">C++の求人・案件</a></li>
+          <li class="footerHList__link"><a href="#">Railsの求人・案件</a></li>
+        </ul>
+      </div>
+        <div class="footerRecommend__item">
+          <p class="footerRecommend__ttl">おすすめのスキル
+          </p>
+          <ul class="footerHList footerHList__links">
+            <li class="footerHList__link"><a href="#">Javaの求人・案件</a></li>
+            <li class="footerHList__link"><a href="#">PHPの求人・案件</a></li>
+            <li class="footerHList__link"><a href="#">Pythonの求人・案件</a></li>
+            <li class="footerHList__link"><a href="#">Rubyの求人・案件</a></li>
+            <li class="footerHList__link"><a href="#">AWSの求人・案件</a></li>
+            <li class="footerHList__link"><a href="#">COBOLの求人・案件</a></li>
+            <li class="footerHList__link"><a href="#">VBAの求人・案件</a></li>
+            <li class="footerHList__link"><a href="#">C#の求人・案件</a></li>
+            <li class="footerHList__link"><a href="#">JavaScriptの求人・案件</a></li>
+            <li class="footerHList__link"><a href="#">Swiftの求人・案件</a></li>
+            <li class="footerHList__link"><a href="#">C++の求人・案件</a></li>
+            <li class="footerHList__link"><a href="#">Railsの求人・案件</a></li>
+          </ul>
+        </div>
+    </div>
+  </div>
+  <div class="footer-submenu">
+    <ul class="footer-submenu__items">
+      <li class="footer-submenu__item"><a href="company-info.html">運営会社について</a></li>
+      <li class="footer-submenu__item"><a href="terms.html" target="_blank" rel="noopener noreferrer">利用規約</a></li>
+      <li class="footer-submenu__item"><a href="privacy-policy.html" target="_blank" rel="noopener noreferrer">個人情報保護方針</a></li>
+      <li class="footer-submenu__item"><a href="#">よくある質問</a></li>
+    </ul>
+  </div>
+  <div class="l-footerBottom">
+    <div class="l-footerBottomInner">
+      <div class="footerLogoCompany">
+        <p class="footerLogoCompany__txtCopyright"><small>&copy; 2021 FreeEngineer.jp</small></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+.faq__title {
+  margin-top: rem(50);
+  &::before {
+    content:"FAQ";
+  }
+}
+.faq__text {
+  margin-top: rem(50);
+  font-size: rem(16);
+  text-align: center;
+}
+.faq-list {
+  margin-top: rem(100);
+}
+
+.faq-list dl {
+  position: relative;
+  margin: 0;
+  padding: rem(28) rem(80) rem(28) rem(30);
+  cursor: pointer;
+  border-bottom: 1px solid #000;
+}
+.faq-list dl:first-child {
+  border-top: 1px solid #000;
+}
+.faq-list dl::before {
+  position: absolute;
+  top: rem(35);
+  right: rem(35);
+  display: block;
+  width: rem(7);
+  height: rem(7);
+  margin: auto;
+  content: '';
+  transform: rotate(135deg);
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+}
+.faq-list .open::before {
+  transform: rotate(-45deg);
+}
+.faq-list dl dt {
+  position: relative;
+  margin: 0;
+  padding: 0 0 0 rem(50);
+  font-weight: bold;
+  font-size: rem(20);
+}
+.faq-list dl dt::before {
+  font-size: rem(20);
+  line-height: 1;
+  position: absolute;
+  top: rem(2);
+  left: 0;
+  display: block;
+  content: 'Q.';
+  color: #3285bf;
+}
+.faq-list dl dd::before {
+  font-size: rem(20);
+  line-height: 1;
+  position: absolute;
+  top: rem(2);
+  left: 2px;
+  display: block;
+  content: 'A.';
+  font-weight: bold;
+  color: #ff635c;
+}
+.faq-list dl dd {
+  position: relative;
+  display: none;
+  height: auto;
+  margin: rem(20) 0 0;
+  padding: 0 0 0 rem(50);
+  font-size: rem(20);
+  font-weight: bold;
+}
+.faq-list dl dd p {
+  margin: rem(30) 0 0;
+}
+.faq-list dl dd p:first-child{
+  margin-top: 0;
+}
+
+@media screen and (max-width: 767px) {
+.faq-list dl {
+  position: relative;
+  padding: rem(15) rem(40) rem(15) rem(10);
+}
+.faq-list dl::before {
+  top: rem(20);
+  right: rem(20);
+  width: rem(7);
+  height: rem(7);
+}
+.faq-list dl dt {
+  padding: 0 0 0 rem(30);
+  font-size: rem(14);
+}
+.faq-list dl dt::before {
+  font-size: rem(14);
+  top: rem(2);
+  left: rem(5);
+  content: 'Q.';
+}
+.faq-list dl dd::before {
+  font-size: rem(14);
+  top: rem(5);
+  left: rem(5);
+  content: 'A.';
+}
+.faq-list dl dd {
+  margin: rem(10) 0 0;
+  padding: 0 0 0 rem(30);
+  font-size: rem(14);
+}
+.faq-list dl dd p {
+  margin: rem(30) 0 0;
+}
+.faq-list dl dd p:first-child{
+  margin-top: 0;
+}
+}

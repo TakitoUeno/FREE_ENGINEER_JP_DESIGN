@@ -1,0 +1,100 @@
+.income-test__title {
+  max-width: rem(700);
+  width: 100%;
+  font-size: rem(30);
+  margin: rem(60) auto 0;
+  position: relative;
+  color: black;
+  background: #d0ecff;
+  line-height: 1.4;
+  padding: 0.25em 0.5em;
+
+  border-radius: 0 5px 5px 5px;
+}
+
+.income-test__title:after {
+  /*タブ*/
+  position: absolute;
+  font-family: "Font Awesome 5 Free",'Quicksand','Avenir','Arial',sans-serif;
+  font-weight: 900;
+  content: '\f00c Check';
+  background: #2196F3;
+  color: #fff;
+  left: 0px;
+  bottom: 100%;
+  border-radius: 5px 5px 0 0;
+  padding: 3px 7px 1px;
+  font-size: 0.7em;
+  line-height: 1;
+  letter-spacing: 0.05em
+}
+
+.income-test__content {
+  display: flex;
+  font-size: rem(16);
+  color: #666;
+  font-weight: bold;
+  width: 100%;
+  max-width: rem(700);
+  margin: rem(50) auto;
+  background-color: #e9f2f7;
+}
+.income-test--left {
+  width:40%;
+  padding: rem(20);
+  border-right: 2px solid $white;
+}
+.income-test__select {
+  display: block;
+  width: 100%;
+  padding: rem(5) rem(10);
+  font-weight: normal;
+  font-size: rem(14);
+  background-color: $white;
+}
+.income-test__item:nth-child(2){
+  margin-top: rem(20);
+}
+
+.forecast__title:not(:first-child){
+  margin-top: rem(20);
+}
+.income-test--right {
+  width: 60%;
+  padding: rem(20);
+}
+.forecast__result {
+  background-color: $white;
+  padding: rem(10);
+  border-radius: rem(3);
+}
+.forecast__year {
+  background-color: #f2f2f2;
+  padding: rem(5);
+  font-size: rem(12);
+  border-radius: rem(3);
+}
+.forecast__money {
+  color: $navy;
+  font-size: rem(20);
+}
+.forecast__description {
+  margin-top: rem(10);
+  font-size: rem(10);
+}
+
+.useful__content {
+  margin-top: rem(50);
+}
+.useful__heading {
+  font-size: rem(24);
+  padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+  color: #494949;/*文字色*/
+  background: #f4f4f4;/*背景色*/
+  border-left: solid 5px #7db4e6;/*左線*/
+  border-bottom: solid 3px #d7d7d7;/*下線*/
+}
+.useful__text {
+  font-size: rem(20);
+  margin-top: rem(20);
+}
